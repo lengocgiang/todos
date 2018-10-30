@@ -5,7 +5,7 @@ import (
 )
 
 var mgoSession *mgo.Session
-var mgo_conn_str = "localhost:27017"
+var mgo_conn_str = "mongodb:27017"
 
 func GetMongoSession() (*mgo.Session, error) {
 	if mgoSession == nil {
