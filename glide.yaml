@@ -1,0 +1,28 @@
+package: github.com/lengocgiang/todos
+import:
+- package: github.com/go-kit/kit
+  subpackages:
+  - endpoint
+  - log
+  - metrics
+  - metrics/prometheus
+  - tracing/opentracing
+  - transport/http
+- package: github.com/gorilla/handlers
+- package: github.com/gorilla/mux
+- package: github.com/lightstep/lightstep-tracer-go
+- package: github.com/oklog/oklog
+  subpackages:
+  - pkg/group
+- package: github.com/opentracing/opentracing-go
+- package: github.com/openzipkin/zipkin-go-opentracing
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+  - prometheus/promhttp
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
+- package: sourcegraph.com/sourcegraph/appdash
+  subpackages:
+  - opentracing
